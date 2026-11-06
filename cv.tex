@@ -1,4 +1,3 @@
-
 \documentclass[11pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
@@ -7,7 +6,18 @@
 \usepackage{lmodern}
 \usepackage[margin=2cm]{geometry}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{lienbleu}{RGB}{0,70,140}
+\usepackage{xurl}
+\usepackage[colorlinks=true, urlcolor=lienbleu, linkcolor=lienbleu, citecolor=lienbleu]{hyperref}
+
+% Publications : DOI cliquable et nom de l'auteur en gras
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:\nolinkurl{#1}}}
+\newcommand{\me}{\textbf{V.~De~Bono}}
+\newenvironment{publis}[1]%
+  {\begin{itemize}[label={}, leftmargin=1.2em, labelwidth=0pt, labelsep=0pt,
+     itemindent=-1.2em, itemsep=0.45em, topsep=0.3em]}%
+  {\end{itemize}}
 
 % Mise en page 
 \setlist[description]{leftmargin=2.8cm, labelwidth=2.5cm, labelsep=0.3cm,
@@ -37,73 +47,146 @@
 % ------------------------------------------------------------------
 \section*{Recherche}
 
+\textbf{Identifiants :} ORCID \href{https://orcid.org/0009-0006-7596-9395}{0009-0006-7596-9395}
+\textperiodcentered{} \href{https://scholar.google.com/citations?user=mMQbyLYAAAAJ}{Google Scholar}
+
+% ------------------------------------------------------------------
 \subsection*{Articles de revues scientifiques}
 
-\begin{description}
-  \item[2026] \textbf{Design, fabrication and testing of a 3D printed concrete shell with continuous fiber-reinforcement}\\
-  \textbf{V. De Bono}, R. Mesnil, N. Ducoulombier, J.-F. Caron.\\
-  Preprint, \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6213618}{SSRN 6213618}
+\begin{publis}{A}
+  \item \me, N. Ducoulombier, R. Mesnil, J.-F. Caron.
+  A roadmap for the structural analysis and justification of thin anisotropic 3D printed reinforced concrete shells.
+  Preprint, \emph{SSRN}, 5204311.
+  \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5204311}{ssrn.com/abstract=5204311}
 
-  \item[2026] \textbf{Fast penetration testing of printable concretes with a portable device: robustness and calibration}\\
-  L. Caneda-Martínez, M. Hassan, L. Demont, E. Keita, P. Belin, \textbf{V. De Bono}, R. Mesnil, J.-F. Caron, B. González-Fonteboa, N. Roussel.\\
-  \emph{Cement and Concrete Research}, \href{https://doi.org/10.1016/j.cemconres.2026.108141}{doi:10.1016/j.cemconres.2026.108141}
+  \item S. Phetsinorath, J. Archez, N. Ducoulombier, \me, L. Demont, \emph{et al.} (2026).
+  A 2K strategy for 3D printing of metakaolin-based geopolymers.
+  \emph{Materials and Structures}, 59(5), 272.
+  \href{https://scholar.google.com/scholar?q=A+2K+strategy+for+3D+printing+of+metakaolin-based+geopolymers}{Google Scholar}
 
-  \item[2025] \textbf{Mechanical properties of 3D printed concrete: a RILEM 304-ADC interlaboratory study -- compressive strength and modulus of elasticity}\\
-  V. Mechtcherine, S. Muthukrishnan, A. Robens-Radermacher, R. Wolfs, J. Versteege, C. Menna, O. Ozturk, N. Ozyurt, J. Roupec, C. Richter, J. Jungwirth, L. Miranda, R. Ammann, J.-F. Caron, \textbf{V. De Bono}, et al.\\
-  \emph{Materials and Structures}, \href{https://doi.org/10.1617/s11527-025-02688-9}{doi:10.1617/s11527-025-02688-9}
+  \item L. Caneda-Martínez, M. Hassan, L. Demont, E. Keita, P. Belin, \me, R. Mesnil, J.-F. Caron, B. González-Fonteboa, N. Roussel (2026).
+  Fast penetration testing of printable concretes with a portable device: robustness and calibration.
+  \emph{Cement and Concrete Research}, 202, 108141.
+  \doi{10.1016/j.cemconres.2026.108141}
 
-  \item[2025] \textbf{Mechanical properties of 3D printed concrete: a RILEM TC 304-ADC interlaboratory study -- flexural and tensile strength}\\
-  V. Mechtcherine, S. Muthukrishnan, A. Robens-Radermacher, R. Wolfs, J. Versteege, C. Menna, O. Ozturk, N. Ozyurt, J. Roupec, C. Richter, J. Jungwirth, L. Miranda, R. Ammann, J.-F. Caron, \textbf{V. De Bono}, et al.\\
-  \emph{Materials and Structures}, \href{https://doi.org/10.1617/s11527-025-02687-w}{doi:10.1617/s11527-025-02687-w}
+  \item \me, R. Mesnil, N. Ducoulombier, J.-F. Caron (2025).
+  Design, fabrication and testing of a 3D printed concrete shell with continuous fiber-reinforcement.
+  Preprint, \emph{SSRN}, 6213618.
+  \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6213618}{ssrn.com/abstract=6213618}
 
-  \item[2024] \textbf{Snapshot on 3D printing with alternative binders and materials: Earth, geopolymers, gypsum and low carbon concrete}\\
-  A. Perrot, Y. Jacquet, J.-F. Caron, R. Mesnil, N. Ducoulombier, \textbf{V. De Bono}, J. Sanjayan, S. Ramakrishnan, H. Kloft, J. Gosslar, S. Muthukrishnan, V. Mechtcherine, T. Wangler, J. L. Provis, K. Dörfler, E. Krakovska, N. Roussel, E. Keita.\\
-  \emph{Cement and Concrete Research}, \href{https://doi.org/10.1016/j.cemconres.2024.107651}{doi:10.1016/j.cemconres.2024.107651}
+  \item R. Wolfs, J. Versteege, M. Santhanam, S. Bhattacherjee, F. Bos, S. Muthukrishnan, C. Menna, O. Ozturk, N. Özyurt, J. Roupec, C. Richter, J. Jungwirth, L. de Miranda, R. Ammann, J.-F. Caron, \me, \emph{et al.} (2025).
+  Mechanical properties of 3D printed concrete: a RILEM TC 304-ADC interlaboratory study -- flexural and tensile strength.
+  \emph{Materials and Structures}, 58(5), 182.
+  \doi{10.1617/s11527-025-02687-w}
 
-  \item[2024] \textbf{Methodology for formulating low-carbon printable mortar through particles packing optimization}\\
-  \textbf{V. De Bono}, N. Ducoulombier, R. Mesnil, J.-F. Caron.\\
-  \emph{Cement and Concrete Research}, \href{https://doi.org/10.1016/j.cemconres.2023.107403}{doi:10.1016/j.cemconres.2023.107403}
-\end{description}
+  \item V. Mechtcherine, S. Muthukrishnan, A. Robens-Radermacher, R. Wolfs, J. Versteege, C. Menna, O. Ozturk, N. Özyurt, J. Roupec, C. Richter, J. Jungwirth, L. de Miranda, R. Ammann, J.-F. Caron, \me, \emph{et al.} (2025).
+  Mechanical properties of 3D printed concrete: a RILEM TC 304-ADC interlaboratory study -- compressive strength and modulus of elasticity.
+  \emph{Materials and Structures}, 58(5), 181.
+  \doi{10.1617/s11527-025-02688-9}
 
+  \item A. Perrot, Y. Jacquet, J.-F. Caron, R. Mesnil, N. Ducoulombier, \me, J. Sanjayan, S. Ramakrishnan, H. Kloft, J. Gosslar, S. Muthukrishnan, V. Mechtcherine, T. Wangler, J. L. Provis, K. Dörfler, E. Krakovská, N. Roussel, E. Keita (2024).
+  Snapshot on 3D printing with alternative binders and materials: earth, geopolymers, gypsum and low carbon concrete.
+  \emph{Cement and Concrete Research}, 185, 107651.
+  \doi{10.1016/j.cemconres.2024.107651}
+
+  \item \me, N. Ducoulombier, R. Mesnil, J.-F. Caron (2024).
+  Methodology for formulating low-carbon printable mortar through particles packing optimization.
+  \emph{Cement and Concrete Research}, 176, 107403.
+  \doi{10.1016/j.cemconres.2023.107403}
+\end{publis}
+
+% ------------------------------------------------------------------
+\subsection*{Chapitres d'ouvrage}
+
+\begin{publis}{O}
+  \item N. Ducoulombier, \me, F. Z. Kachkouch, Y. Jacquet, A. Perrot (2025).
+  From laboratory to practice: characterizing fresh and cured printed materials.
+  In A. Perrot, Y. Jacquet (eds.), \emph{3D Concrete Printing: State of the Art and Applications}, chap.~3, pp.~67--101. ISTE/Wiley.
+  \doi{10.1002/9781394352081.ch3}
+
+  \item N. Ducoulombier, \me, A. Perrot (2025).
+  Caractérisation des matériaux imprimés frais et durcis, du laboratoire à la pratique.
+  In A. Perrot, Y. Jacquet (dir.), \emph{Impression 3D béton : état de l'art et applications}, chap.~3, p.~73. ISTE Éditions, ISBN 978-1-78948-200-3.
+\end{publis}
+
+% ------------------------------------------------------------------
 \subsection*{Conférences}
 
-\begin{description}
-  \item[2026] \textbf{Conception et fabrication d'une coque imprimée en 3D renforcée par des fibres continues}, SCAN'26, ENSA Montpellier\\
-  \textbf{V. De Bono}, R. Mesnil, N. Ducoulombier, J.-F. Caron.\\
-  \href{https://www.shs-conferences.org/articles/shsconf/abs/2026/15/shsconf_scan26_02007/shsconf_scan26_02007.html}{SHS Web of Conferences 241, 02007 (2026)}
- 
+\begin{publis}{C}
+  \item A. Sepidbar, M. Pierre, \me, N. Ducoulombier, R. Mesnil, \emph{et al.} (2026).
+  An in-line method for estimation of early-age stiffness of 3D concrete printing.
+  \emph{RILEM International Conference on Concrete and Digital Fabrication}, pp.~46--53.
+  \href{https://scholar.google.com/scholar?q=An+In-line+Method+for+Estimation+of+Early-Age+Stiffness+of+3D+Concrete+Printing}{Google Scholar}
 
-  \item[2024] \textbf{Design, structural optimization and fabrication of concrete shell through fiber-reinforced 3D printing}, IASS Symposium, ETH Zurich\\
-  \textbf{V. De Bono}, R. Mesnil, N. Ducoulombier, J.-F. Caron.\\
-  \href{https://www.ingentaconnect.com/contentone/iass/piass/2024/00002024/00000004/art00009}{Proceedings of the IASS Annual Symposium 2024}
+  \item \me, R. Mesnil, J.-F. Caron, N. Ducoulombier (2026).
+  Conception, fabrication et essais mécaniques sur une coque mince imprimée 3D en béton fibré.
+  \emph{SCAN'26}, ENSA Montpellier. \emph{SHS Web of Conferences}, 241, 02007.
+  \href{https://www.shs-conferences.org/articles/shsconf/abs/2026/15/shsconf_scan26_02007/shsconf_scan26_02007.html}{shs-conferences.org}
 
-  \item[2024] \textbf{Toward 3D printable low carbon mortar. Method and application}, RILEM, Milan\\
-  \textbf{V. De Bono}, S. Loulha, N. Ducoulombier, R. Mesnil, J.-F. Caron.\\
-  \href{https://link.springer.com/chapter/10.1007/978-3-031-70281-5_25}{doi:10.1007/978-3-031-70281-5\_25}
+  \item J.-F. Caron, N. Ducoulombier, L. Demont, \me, R. Mesnil (2026).
+  Using 3D printing for a new cementitious composite and structural design.
+  \emph{Proceedings of the 12th International Conference on FRP Composites in Civil Engineering (CICE)}, vol.~777, pp.~1615--1623. Springer.
+  \doi{10.1007/978-3-032-09399-8_152}
 
-  \item[2023] \textbf{Formulation de béton pour l'impression 3D}, AFJC, Paris\\
-  \textbf{V. De Bono}, N. Ducoulombier, R. Mesnil, J.-F. Caron.\\
-  \href{https://doi.org/10.26168/ajce.41.1.4}{doi:10.26168/ajce.41.1.4}
+  \item \me, N. Ducoulombier, L. Demont, R. Mesnil, J.-F. Caron (2025).
+  Coques cimentaires imprimées en 3D et renforcées par fibres longues.
+  \emph{Comptes rendus des Journées nationales sur les composites (JNC 2025)}, Gif-sur-Yvette.
+  \href{https://jnc2025.sciencesconf.org/602015/document}{jnc2025.sciencesconf.org/602015}
 
-  \item[2023] \textbf{3D printing of continuous-fibers cementitious composites}, Strategies for Reinforcing Additively Manufactured Constructions (en ligne)\\
-  \textbf{V. De Bono}, L. Demont, N. Ducoulombier, R. Mesnil, J.-F. Caron.\\
-  \href{https://doi.org/10.52825/ocp.v3i.193}{doi:10.52825/ocp.v3i.193}
-\end{description}
+  \item \me, N. Ducoulombier, S. Loulha, R. Mesnil, J.-F. Caron (2025).
+  Toward 3D printable low-carbon mortar: method and application.
+  \emph{Proceedings of the RILEM Spring Convention and Conference 2024}, Milan. RILEM Bookseries, 56, pp.~221--230. Springer.
+  \doi{10.1007/978-3-031-70281-5_25}
 
-\subsection*{Ouvrage}
+  \item L. Demont, \me, N. Ducoulombier, R. Mesnil, J.-F. Caron (2024).
+  Anisotropic concrete: a composite look on the engineering and architecture of concrete construction.
+  \emph{Built Environment Additive Manufacturing (BE-AM) Symposium 2024}, N. Gaudillière-Jami, A. Wolf (eds.), pp.~94--103.
 
-\begin{description}
-  \item[2025] \textbf{Impression 3D béton : état de l'art et applications}, A. Perrot et Y. Jacquet (dir.), ISTE Éditions, ISBN 9781789482003\\
-  Co-écriture du chapitre 3, \emph{Caractérisation des matériaux imprimés frais et durcis, du laboratoire à la pratique} : \textbf{V. De Bono}, N. Ducoulombier, A. Perrot.
-\end{description}
+  \item \me, L. Demont, N. Ducoulombier, R. Mesnil, J.-F. Caron (2024).
+  Large-scale 3D printing of a shell structure reinforced by the flow-based pultrusion process.
+  \emph{Supplementary Proceedings of the 4th RILEM International Conference on Concrete and Digital Fabrication (DC 2024)}, Munich.
+  \doi{10.24355/dbbs.084-202408201037-0}
 
-\subsection*{Thèse}
+  \item \me, N. Ducoulombier, R. Mesnil, J.-F. Caron (2024).
+  Tailored low-carbon footprint cementitious material for 3D printing: strategies for rheology adjustment and mechanical performance estimation.
+  \emph{Supplementary Proceedings of the 4th RILEM International Conference on Concrete and Digital Fabrication (DC 2024)}, Munich.
+  \doi{10.24355/dbbs.084-202408130656-0}
 
-\begin{description}
-  \item[2025] \textbf{Étude des procédés d'impression 3D de bétons fibrés pour la construction. Formulation, renforcement et application}\\
-  Sous la direction de J.-F. Caron, co-encadrée par N. Ducoulombier et R. Mesnil.\\
+  \item L. Caneda-Martínez, M. Hassan, L. Demont, E. Keita, P. Belin, \me, \emph{et al.} (2024).
+  Optimization of fast penetration tests for rheology control in 3D printing concrete.
+  \emph{Supplementary Proceedings of the 4th RILEM International Conference on Concrete and Digital Fabrication (DC 2024)}, Munich.
+  \href{https://leopard.tu-braunschweig.de/receive/dbbs_mods_00077815}{leopard.tu-braunschweig.de}
+
+  \item \me, R. Mesnil, N. Ducoulombier, J.-F. Caron (2024).
+  Design, structural optimization and fabrication of concrete shells through fibre-reinforced 3D printing.
+  \emph{Proceedings of the IASS Annual Symposium 2024: Redefining the Art of Structural Design}, ETH Zurich, n°~4, pp.~1--10.
+  \href{https://www.ingentaconnect.com/contentone/iass/piass/2024/00002024/00000004/art00009}{ingentaconnect.com}
+
+  \item J.-F. Caron, N. Ducoulombier, L. Demont, \me, R. Mesnil (2024).
+  Reinvent reinforced concrete with robotics and 3D printing.
+  \emph{Proceedings of the 41st International Symposium on Automation and Robotics in Construction (ISARC 2024)}, Lille.
+  \doi{10.22260/ISARC2024/0021}
+
+  \item J.-F. Caron, N. Ducoulombier, L. Demont, \me, R. Mesnil (2023).
+  3D printing of continuous-fibers cementitious composites: anisotropic 3D mortar.
+  \emph{Visions and Strategies for Reinforcing Additively Manufactured Constructions}, \emph{Open Conference Proceedings}, 3, pp.~65--74.
+  \doi{10.52825/ocp.v3i.193}
+
+  \item \me, N. Ducoulombier, R. Mesnil, J.-F. Caron (2023).
+  Formulation de béton pour l'impression 3D.
+  \emph{AFJC}, Paris. \emph{Academic Journal of Civil Engineering}, 41(1), pp.~447--456.
+  \doi{10.26168/ajce.41.1.4}
+\end{publis}
+
+% ------------------------------------------------------------------
+\subsection*{Thèse de doctorat}
+
+\begin{publis}{T}
+  \item \me{} (2025).
+  Étude des procédés d'impression 3D de bétons fibrés pour la construction. Formulation, renforcement et application.
+  Thèse de doctorat, École nationale des ponts et chaussées, laboratoire Navier. Dir. J.-F. Caron, co-encadrement N. Ducoulombier et R. Mesnil.
   \href{https://theses.hal.science/tel-05329680/}{theses.hal.science/tel-05329680}
-\end{description}
+\end{publis}
 
 
 \section*{Enseignement}
@@ -111,8 +194,8 @@
 \begin{description}
   \item[2026 -- auj.] \textbf{Maître de conférences titulaire STA-CIMA}, ENSAP Lille
   \begin{itemize}
-    \item TD Franchissement, licence 1 - 36 h TD, 25 étudiants.
-    \item CM et TD Thermique du bâtiment, licence 2 -- 22 h CM, 24 h TD
+    \item TD Franchissement, licence 1 - 36 h TD
+    \item CM et TD Thermique du bâtiment, licence 2 - 22 h CM, 24 h TD
     \item CM et TD Système constructif, licence 2 - 22 h CM, 24h TD
     \item TD Architecture bioclimatique, licence 3 - 12 h TD
     \item TD Enveloppes, licence 3 - 24 h TD
@@ -168,42 +251,6 @@
   \end{itemize}
 \end{description}
 
-% ------------------------------------------------------------------
-\section*{Projets (XtreeE)}
-
-\begin{description}
-  \item[2025] \textbf{Portiques structurels}\\
-  Conception et fabrication d'éléments de structure poteaux-poutres fonctionnant en portique (encastrement). Mise au point du système constructif, intégration des CET, phases ESQ à EXE.\\
-  Maîtrise d'œuvre : XtreeE, Bouygues Construction, Scale One. Maîtrise d'ouvrage : confidentiel.
-
-  \item[2020 -- 2025] \textbf{Passerelle Cabrié}\\
-  Conception et fabrication d'une passerelle piétonne à Clermont-l'Hérault en conception-réalisation, phases ESQ à EXE.\\
-  Maîtrise d'œuvre : XD Architecture, XtreeE, Sedoa. Maîtrise d'ouvrage : Département de l'Hérault. Construction : Freyssinet, Spie Batignolles, XtreeE.
-
-  \item[2021 -- 2024] \textbf{Passerelle Plaine Commune}\\
-  Conception d'une passerelle pour les Jeux olympiques de Paris, projet arrêté en phase 2 de R\&D. Études ACV et certification avec le CSTB, phases ESQ à APD.\\
-  Maîtrise d'œuvre : Lavigne \& Cheron, XtreeE, Sedoa. Maîtrise d'ouvrage : Solideo. Construction : Freyssinet, XtreeE.
-
-  \item[2021] \textbf{Coffrages perdus}\\
-  Conception et fabrication de coffrages perdus pour faciliter la mise en œuvre : coffrages de nœuds de poutres et boîtes de réservation.\\
-  Conception : XtreeE. Client : Spie Batignolles.
-
-  \item[2021 -- 2023] \textbf{Récifs artificiels}\\
-  Conception et fabrication de cinq typologies de récifs artificiels.\\
-  Conception : XtreeE. Clients : Seaboost et Setec In Vivo.
-
-  \item[2019 -- 2022] \textbf{Viliaprint, maisons à Reims}\\
-  Cinq maisons imprimées en 3D béton, certifiées par une appréciation technique d'expérimentation (ATEx), phases APS à EXE.\\
-  Maîtrise d'ouvrage : Plurial Novilia. Maîtrise d'œuvre : Emmanuel Coste, XtreeE, NECS. Réalisation : XtreeE et Demathieu Bard.
-
-  \item[2019 -- 2021] \textbf{Archipel, aménagement paysager}\\
-  Aménagement de trois cours intérieures du siège social de Vinci Construction, phases ESQ à EXE.\\
-  Maîtrise d'ouvrage : Vinci Construction France. Maîtrise d'œuvre : Viguier. Réalisation : XtreeE et VCF.
-
-  \item[2019 -- 2021] \textbf{Mât de télécommunication}\\
-  Mât support de télécommunication végétalisé en Guadeloupe, phases ESQ à EXE.\\
-  Maîtrise d'ouvrage : Art \& Fact Innovation. Conception : XtreeE et Lamoureux \& Ricciotti Ingénierie. Végétalisation : Jardins de Babylone. Fabrication : XtreeE. Mise en œuvre : Freyssinet.
-\end{description}
 
 \section*{Expérience professionnelle}
 
